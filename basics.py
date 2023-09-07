@@ -13,7 +13,7 @@ def nthmax(n, a):
     if n >= len(a) or n < 0:
         return None
     
-     sorted(a, reverse=True)   #sort the array
+    sorted(a, reverse=True)   #sort the array
 
     return a[n]   #return the nth index number
 
