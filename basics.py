@@ -5,23 +5,21 @@ def isPalindrome(n):
      string = str(n)
     
     # Check if the string is equal to its reverse
-     string == string[::-1]
+     return string == string[::-1]
 
 
 def nthmax(n, a):
 
-    if n >= len(a):
+    if n >= len(a) or n < 0:
         return None
     
-
     sorted(a)   #sort the array
 
     return a[n]   #return the nth index number
         
 
 def freq(s):
-
-
+ 
     max = {} 
 
     largest = 0
