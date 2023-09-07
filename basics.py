@@ -13,43 +13,36 @@ def nthmax(n, a):
     if n >= len(a) or n < 0:
         return None
     
-    sorted(a)   #sort the array
+     sorted(a, reverse=True)   #sort the array
 
     return a[n]   #return the nth index number
-        
+
+
 
 def freq(s):
+     maxletter = {}
+
+     count = 0
+
+     mostfreq = ""
+
+     for letter in s:
+          if letter not in maxletter:
+               maxletter[letter] = 1
+
+          else:
+
+               maxletter[letter] += 1
+
+        
+          if maxletter[letter] > count:
+               count = maxletter[letter]
+               mostfreq = letter 
+               
+     
+     return mostfreq
+     
  
-    max = {} 
-
-    largest = 0
-
-    most_freq = ""
-
-    if s == "" :  #checks if string is empty
-
-        return ""
-    
-    else :
-
-        for letter in s:
-
-            if letter not in max :
-
-                max[letter] = 0
-
-            max[letter] += 1 
-
-    for let1 in max :
-
-        if largest < max[let1] :
-
-            largest = max[let1]
-            most_freq = letter
-
-
-    return most_freq
-
 
 def zipHash(arr1, arr2):
 
