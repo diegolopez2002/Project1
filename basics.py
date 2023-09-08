@@ -10,6 +10,9 @@ def nthmax(n, a):
 
      if n >= len(a):
           return None
+
+     if n < 0:
+          return None
     
      a.sort(reversed=True)
 
