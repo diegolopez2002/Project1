@@ -54,19 +54,14 @@ def freq(s):
 
 def zipHash(arr1, arr2):
 
-    map1 = {}
-
-    if len(arr1) != len(arr2):
-        return None
+     if len(arr1) != len(arr2):
+          return None
     
-    else:
+     result = {}
+     for i in range(len(arr1)):
+          result[arr1[i]] = arr2[i]
 
-        for i in len(arr1):
-
-            map1[arr1[i]] = arr2[i]
-
-    
-    return map1
+     return result
 
 
 def hashToArray(hash): 
