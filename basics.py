@@ -8,13 +8,13 @@ def isPalindrome(n):
 
 def nthmax(n, a):
 
-     if n not in a:
-          return None
-    
-     if n <= len(a):
+     if n >= len(a) or n < 0:
           return None
     
      sortedarray = sorted(set(a), reverse=True)
+
+     if n <= len(sortedarray):
+          return None
 
      return sortedarray[n]
         
