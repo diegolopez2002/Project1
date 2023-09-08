@@ -1,4 +1,3 @@
-from functools import reduce
 
 def isPalindrome(n):
 
@@ -68,7 +67,12 @@ def hashToArray(hash):
 
 def maxLambdaChain(init, lambdas):
     
-    return reduce(init, maxLambdaChain(lambdas[0](init), lambdas[1:]))
+     result = init
+
+     for num in lambdas:
+          result = max(result, num(result))
+
+     return result
 
 
 
