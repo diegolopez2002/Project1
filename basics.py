@@ -9,11 +9,11 @@ def isPalindrome(n):
 def nthmax(n, a):
 
      if n >= len(a):
-        return None
+          return None
     
-    a.sort(reversed=True)
+     a.sort(reversed=True)
 
-    return a[n]
+     return a[n]
      
         
 def freq(s):
