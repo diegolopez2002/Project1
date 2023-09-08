@@ -55,7 +55,7 @@ class Staff(Person):
         return self.position
 
 
-class Roster:
+class Roster():
 
 
     def __init__(self):
@@ -87,8 +87,10 @@ class Roster:
         return self.name
 
         
-    def map():
+    def map(Person):
         pass
+        
+        
 
 
 
