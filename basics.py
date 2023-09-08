@@ -10,12 +10,12 @@ def isPalindrome(n):
 
 def nthmax(n, a):
 
-    if n >= len(a) or n < 0:
-        return None
-    
-    sorted(a, reverse=True)   #sort the array
+    sortedarray = sorted(a, reverse=True)
 
-    return a[n]   #return the nth index number
+    if n < len(sortedarray):
+        return sortedarray
+    else:
+        None
 
 
 
