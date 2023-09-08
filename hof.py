@@ -33,10 +33,7 @@ def count_ones(matrix):
 
 
 def addgenerator(x):
-
-    add = lambda x,y : y + x
-    return add
-
+    return lambda x: lambda y : x + y
 
 
 def apply_to_self():
