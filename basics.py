@@ -11,7 +11,7 @@ def nthmax(n, a):
      if n not in a:
           return None
     
-     if n > len(a):
+     if n <= len(a):
           return None
     
      sortedarray = sorted(set(a), reverse=True)
