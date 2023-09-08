@@ -8,14 +8,14 @@ def isPalindrome(n):
 
 def nthmax(n, a):
 
-     if n >= len(a):
-          return None
+     sorted(a, reverse=True)
 
-     if n < 0:
+     if n not in a:
           return None
     
-     a.sort(reversed=True)
-
+     if n >= len(a):
+          return None
+    
      return a[n]
      
         
