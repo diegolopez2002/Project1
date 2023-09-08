@@ -20,7 +20,7 @@ class Person:
         return self
     
 
-class Student:
+class Student(Person):
 
     def __init__(self,name,age, grade):
 
@@ -40,7 +40,7 @@ class Student:
 
 
 
-class Staff:
+class Staff(Person):
 
 
     def __init__(self, name, age, position):
