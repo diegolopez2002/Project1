@@ -53,35 +53,21 @@ def zipHash(arr1, arr2):
     
     else:
 
-        for i in len(arr1):
+        for i in range(len(arr1)):
 
             map1[arr1[i]] = arr2[i]
-
-    
+             
     return map1
 
 
 def hashToArray(hash): 
+     
+     array = []
+     for key in hash.keys():
+          array.append([key, hash[key])
 
-    list1 = []
-
-    if len(hash) == 0 :
-        return list1 
-    
-    else :
-
-        i = 0
-        
-        for keys in hash:
-            
-            list1.append(keys)
-
-            list1[i] = hash[keys]
-
-            i += 1
-        
-    return list1
-
+     return array
+          
 
 def maxLambdaChain(init, lambdas):
     
