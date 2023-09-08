@@ -10,7 +10,6 @@ class Person:
 
 
     def getAge(self):
-    
         return self.age
 
 
@@ -33,9 +32,9 @@ class Student(Person):
         
 
     def change_grade(self, x):
-
         self.grade = x
         return self
+
 
 class Staff(Person):
 
