@@ -9,13 +9,12 @@ class Person:
         self.age = age
 
 
-    def getAge(self):
+    def get_age(self):
 
-        int(self.age)
         return self.age
 
 
-    def setAge(self, x):
+    def set_age(self, x):
 
         int(self.age)
         self.age = x
