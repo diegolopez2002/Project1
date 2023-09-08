@@ -22,10 +22,10 @@ class Person:
 
 class Student(Person):
 
-    def __init__(self,name,age, grade):
-
+    def __init__(self, name, age, grade):
+        
+        super().__init__(name,age)
         self.grade = grade
-        return super().__init__(name,age,grade)
 
 
     def get_grade(self):
@@ -44,9 +44,8 @@ class Staff(Person):
 
 
     def __init__(self, name, age, position):
-        
+        super().__init__(name, age)
         self.position = position
-        return super().__init__(name,age,position)
 
 
     def get_position(self):
