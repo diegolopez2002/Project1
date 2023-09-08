@@ -57,24 +57,25 @@ class Staff(Person):
 
 class Roster:
 
-    size = 0
 
     def __init__(self):
-
+        
         self.persons = []
+        self.size = 0
         
     def add(self, person):
         
         self.persons.append(person)
-            
-            
-    def size(size):
-        return size
+        self.size += 1
+        
+        
+    def size(self):
+        return self.size
         
     def remove(self, Person):
 
         self.persons.remove(Person)
-        size -= 1
+        self.size -= 1
 
 
     def get_person(self, name):
@@ -83,11 +84,10 @@ class Roster:
             return None
         
         self.name = name
-        return name
+        return self.name
 
         
     def map():
-
         pass
 
 
