@@ -14,10 +14,10 @@ class Person:
         return self.age
 
 
-    def setAge(x, self):
+    def setAge(self, x):
 
         self.age = x
-        return x
+        return self
     
 
 class Student:
