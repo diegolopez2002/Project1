@@ -61,34 +61,41 @@ class Roster():
     def __init__(self):
         
         self.persons = []
-        self.size = 0
+        
         
     def add(self, person):
         
         self.persons.append(person)
-        self.size += 1
+        
         
         
     def size(self):
-        return self.size
         
-    def remove(self, Person):
+        return len(self.persons)
+        
+        
+    def remove(self, person):
 
-        self.persons.remove(Person)
-        self.size -= 1
+        if person in self.persons:
+            self.persons.remove(Person)
+        
 
 
     def get_person(self, name):
 
-        if name not in self.persons:
-            return None
-        
-        self.name = name
-        return self.name
+        for self.person in persons:
+            if self.person.name == name:
+                return self.person
+
+        return None
+            
 
         
-    def map(Person):
+    def map(self):
         pass
+
+        
+        
         
         
 
