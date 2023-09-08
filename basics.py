@@ -8,13 +8,23 @@ def isPalindrome(n):
 
 def nthmax(n, a):
 
-    sortedarray = sorted(a, reverse=True)
+     if n not in a:
+          return None
+    
+     if n > len(a):
+          return None
+    
+     largest = 0
+    
+     for i in a:
 
-    if n < len(sortedarray):
-        return sortedarray
-    else:
-        None
+          if i < a[n]:
+               largest = a[n]
+            
+     n += 1
 
+     return largest
+        
 
 
 def freq(s):
