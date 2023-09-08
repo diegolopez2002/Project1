@@ -29,19 +29,15 @@ class Student(Person):
 
 
     def get_grade(self):
-
         return self.grade
         
 
-    def change_grade(x,self):
+    def change_grade(self, x):
 
         self.grade = x
-        return self.grade
-
-
+        return self
 
 class Staff(Person):
-
 
     def __init__(self, name, age, position):
         super().__init__(name, age)
@@ -67,14 +63,11 @@ class Roster:
         self.persons = []
         
     def add(self, person):
-
-        if isinstance(person, Person) or isinstance(person, Staff) or isinstance(person, Student):
-            self.persons.append(person)
-            size += 1
+        
+        self.persons.append(person)
             
             
     def size(size):
-    
         return size
         
     def remove(self, Person):
