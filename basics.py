@@ -14,16 +14,9 @@ def nthmax(n, a):
      if n > len(a):
           return None
     
-     largest = 0
-    
-     for i in a:
+     sortedarray = sorted(set(a), reverse=True)
 
-          if i < a[n]:
-               largest = a[n]
-            
-     n += 1
-
-     return largest
+     return sortedarray[n]
         
 
 
