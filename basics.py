@@ -12,16 +12,16 @@ def nthmax(n, a):
      if n < 0:
           return None
 
-     unique_elements = []
+     array = []
      for item in a:
-          if item not in unique_elements:
+          if item not in array:
                unique_elements.append(item)
 
-     sorted_unique = sorted(unique_elements, reverse=True)
+     unique = sorted(array, reverse=True)
 
     
-     if n < len(sorted_unique):
-          return sorted_unique[n]
+     if n < len(unique):
+          return unique[n]
      else:
           return None
      
