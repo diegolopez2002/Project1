@@ -66,7 +66,7 @@ class Roster():
             
     def map(self, func):
         for Person in self.roster1:
-            func(person)
+            func(Person)
             
 
         
