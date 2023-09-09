@@ -9,15 +9,15 @@ def isPalindrome(n):
 
 def nthmax(n, a):
 
-     sorted(a, reverse=True)
+     array = sorted(a, reverse=True)
 
-     if n not in a:
+     if n not in array:
           return None
     
-     if n >= len(a):
+     if n >= len(array):
           return None
     
-     return a[n]
+     return array[n]
      
         
 def freq(s):
