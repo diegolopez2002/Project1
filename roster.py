@@ -55,7 +55,7 @@ class Staff(Person):
         return self.position
 
 
-class Roster():
+class roster():
 
 
     def __init__(self):
