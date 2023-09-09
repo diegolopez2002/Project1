@@ -17,7 +17,7 @@ def nthmax(n, a):
           if item not in array:
                array.append(item)
 
-     sorted_unique = sorted(unique_elements, reverse=True)
+     sorted_unique = sorted(array, reverse=True)
 
      if n < len(sorted_unique):
           return sorted_unique[n]
