@@ -11,8 +11,6 @@ class Person():
         return self.age
 
     def set_age(self, x):
-
-        int(self.age)
         self.age = x
         return self
 
