@@ -55,20 +55,18 @@ class Staff(Person):
         return self.position
 
 
-class roster():
-
+class Roster():
 
     def __init__(self):
         
         self.persons = []
-        
-        
+
+    
     def add(self, person):
         
         self.persons.append(person)
         
-        
-        
+    
     def size(self):
         
         return len(self.persons)
