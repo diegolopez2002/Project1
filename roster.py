@@ -1,6 +1,3 @@
-#Diego Lopez roster
-
-
 class Person():
 
     def __init__(self, name, age):
@@ -13,13 +10,12 @@ class Person():
 
         return self.age
 
-
     def set_age(self, x):
 
         int(self.age)
         self.age = x
         return self
-    
+
 
 class Student(Person):
 
@@ -62,35 +58,31 @@ class Roster():
         self.persons = []
 
     
-    def add(self, person):
-        
-        self.persons.append(person)
+    def add(self, Person): 
+        self.persons.append(Person)
         
     
-    def size(self):
-        
+    def size():
         return len(self.persons)
         
         
-    def remove(self, person):
+    def remove(self, Person):
 
-        if person in self.persons:
+        if Person in self.persons:
             self.persons.remove(Person)
         
 
 
     def get_person(self, name):
 
-        for self.person in persons:
-            if self.person.name == name:
-                return self.person
-
+        for self.Person in persons:
+            if self.Person.name == name:
+                return self.Person
         return None
             
-
-        
-    def map(self):
-        pass
+    def map(self, f):
+        for i in range(len(persons)):
+            self.persons[i] = f(self.persons[i])
 
         
         
