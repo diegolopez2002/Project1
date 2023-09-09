@@ -1,36 +1,27 @@
-class Person():
-
+class Person:
     def __init__(self, name, age):
-
         self.name = name
         self.age = age
 
-
     def get_age(self):
-
         return self.age
 
     def set_age(self, x):
         self.age = x
-        return self
-
+        
 
 class Student(Person):
-
+    
     def __init__(self, name, age, grade):
-        
-        super().__init__(name,age)
+        super().__init__(name, age)
         self.grade = grade
-
 
     def get_grade(self):
         return self.grade
-        
 
     def change_grade(self, x):
         self.grade = x
-        return self
-
+        
 
 class Staff(Person):
 
@@ -38,9 +29,7 @@ class Staff(Person):
         super().__init__(name, age)
         self.position = position
 
-
     def get_position(self):
-        
         return self.position
 
     def change_position(self, newPosition):
@@ -53,39 +42,31 @@ class Roster():
 
     def __init__(self):
         
-        self.persons = []
+        self.roster1 = []
 
     
     def add(self, Person): 
-        self.persons.append(Person)
+        self.roster1.append(Person)
         
     
-    def size():
-        return len(self.persons)
+    def size(self):
+        return len(self.roster1)
         
         
     def remove(self, Person):
-
-        if Person in self.persons:
-            self.persons.remove(Person)
+        self.roster1.remove(Person)
         
-
 
     def get_person(self, name):
-
-        for self.Person in persons:
-            if self.Person.name == name:
-                return self.Person
+        for Person in self.roster1:
+            if Person.name == name:
+                return Person
+                
         return None
             
-    def map(self, f):
-        for i in range(len(persons)):
-            self.persons[i] = f(self.persons[i])
+    def map(self, func):
+        for Person in self.roster1:
+            func(person)
+            
 
         
-        
-        
-        
-
-
-
