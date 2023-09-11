@@ -56,7 +56,7 @@ def zipHash(arr1, arr2):
           return None
 
      if len(arr1) == 0 or len(arr2) == 0:
-          return None
+          return result
 
      for i in range(len(arr1)):
           
