@@ -6,7 +6,7 @@ def uniq(lst):
     
     result = []
 
-    [result.append(x) for x in lst if x not in result]
+    [result.append(x) for x in lst if x not in result] #add to array and check
 
     return result
     
@@ -33,11 +33,11 @@ def count_ones(matrix):
 
 
 def addgenerator(x):
-    return lambda y : x + y
+    return lambda y : x + y #add x to a value
 
 
 def apply_to_self():
-     return lambda x, y: x + y(x)
+     return lambda x, y: x + y(x) 
 
 
 def map2(matrix,f):
