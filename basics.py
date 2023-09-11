@@ -78,11 +78,16 @@ def hashToArray(hash):
 
 def maxLambdaChain(init, lambdas):
 
-     result = lambdas[0](init)
-   
-     recur = maxLambdaChain(init, lambdas[1:])
-    
-     return max(result, recur)
+     if not lambdas:
+          return None
+
+     
+     result = init
+
+     for num in lambdas:
+          result = max(result, maxLambdaChain(result))
+
+     return result
 
 
 
