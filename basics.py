@@ -85,7 +85,7 @@ def maxLambdaChain(init, lambdas):
      
      for num in lambdas:
 
-          result = max(result, num(num))
+          result = max(init, num(result))
 
      return result
 
