@@ -52,13 +52,18 @@ def zipHash(arr1, arr2):
 
      result = {}
 
+     
+
      if len(arr1) != len(arr2):
           return None
 
      if len(arr1) == 0 or len(arr2) == 0:
           return result
 
-     for i in len(arr1):
+
+     length = len(arr1)
+
+     for i in length:
           
           if arr1[i] is None or arr2[i] is None:
             return None
