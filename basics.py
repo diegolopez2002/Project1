@@ -6,7 +6,6 @@ def isPalindrome(n):
     # Check if the string is equal to its reverse
      return string == string[::-1]
 
-
 def nthmax(n, a):
 
      if n < 0:
@@ -23,8 +22,8 @@ def nthmax(n, a):
           return sorted_unique[n]
      else:
           return None
-     
-        
+
+
 def freq(s):
      maxletter = {}
 
@@ -54,6 +53,9 @@ def zipHash(arr1, arr2):
 
      if len(arr1) != len(arr2):
           return None
+
+     if len(arr1) and len(arr2):
+          return {}
     
      result = {}
      for i in range(len(arr1)):
