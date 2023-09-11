@@ -11,11 +11,9 @@ def uniq(lst):
     return result
     
 
-
 def find_max(matrix):
     
     return reduce(lambda x,y : x if x > y else y, [num for submatrix in matrix for num in submatrix])
-
 
 
 def count_ones(matrix):
