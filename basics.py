@@ -83,7 +83,7 @@ def maxLambdaChain(init, lambdas):
 
      result = init
 
-     for num in lambdas:
+     for num in range(len(lambdas)):
 
           if num(result) < result:
             continue
