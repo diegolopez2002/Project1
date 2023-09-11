@@ -39,7 +39,6 @@ def freq(s):
 
                maxletter[letter] += 1
 
-        
           if maxletter[letter] > count:
                count = maxletter[letter]
                mostfreq = letter 
@@ -50,10 +49,8 @@ def freq(s):
 
 def zipHash(arr1, arr2):
 
-     result = {}
-
+     result = {} #initalize dictionary
      
-
      if len(arr1) != len(arr2):
           return None
 
@@ -61,14 +58,12 @@ def zipHash(arr1, arr2):
           return result
 
 
-     length = len(arr1)
-
-     for i in length:
+     for i in range(len(length)): 
           
           if arr1[i] is None or arr2[i] is None:
             return None
                
-          result[arr1[i]] = arr2[i]
+          result[arr1[i]] = arr2[i] #assign to dictionary
 
      return result
 
@@ -86,10 +81,10 @@ def hashToArray(hash):
 
 def maxLambdaChain(init, lambdas):
 
-     if not lambdas:
+     if not lambdas: # return init if lambdas is empty
           return init
 
-     result = init
+     result = init 
      
      for num in lambdas:
           if num is None or not callable(num):
