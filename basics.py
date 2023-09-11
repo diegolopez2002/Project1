@@ -84,8 +84,10 @@ def maxLambdaChain(init, lambdas):
      result = init
      
      for num in lambdas:
+          if num is None or not callable(num):
+               continue
 
-          result = max(result, num(init))
+          result = max(init, num(result))
 
      return result
 
