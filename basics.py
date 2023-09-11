@@ -82,12 +82,10 @@ def maxLambdaChain(init, lambdas):
           return init
 
      result = init
+     
+     for num in lambdas:
 
-     for num in len(lambdas):
-
-          if num(result) < result:
-            continue
-          result = max(result, num(result))
+          result = max(result, num(num))
 
      return result
 
