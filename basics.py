@@ -46,16 +46,21 @@ def freq(s):
                
      
      return mostfreq
-     
- 
+
 
 def zipHash(arr1, arr2):
+
+     result = {}
 
      if len(arr1) != len(arr2):
           return None
           
-     result = {}
+
      for i in range(len(arr1)):
+          
+          if arr1[i] is None or arr2[i] is None:
+            return None
+               
           result[arr1[i]] = arr2[i]
 
      return result
