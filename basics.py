@@ -54,7 +54,6 @@ def zipHash(arr1, arr2):
 
      if len(arr1) != len(arr2):
           return None
-          
 
      for i in range(len(arr1)):
           
@@ -67,6 +66,9 @@ def zipHash(arr1, arr2):
 
 
 def hashToArray(hash): 
+
+     if hash is None:
+          return None
 
      result = []
      for key in hash.keys():
